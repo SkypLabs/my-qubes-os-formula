@@ -2,18 +2,10 @@
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 include:
+  - qvm.work
   - my-config.work-template
 
-work:
-  qvm.vm:
+work-prefs:
+  qvm.prefs:
     - name: work
-    - present:
-      - template: custom-work
-      - label: blue
-    - prefs:
-      - memory: 400
-      - maxmem: 4000
-      - include-in-backups: True
-      - netvm: sys-firewall
-      - vcpus: 2
-      - debug: false
+    - template: custom-work
