@@ -11,3 +11,11 @@ base:
     - my-config.vault
     - my-config.work
     - my-config.work-pub
+  'custom-personal':
+    - my-config.personal-template-config
+  'custom-work':
+    - my-config.work-template-config
+  'custom-untrusted':
+    - my-config.untrusted-template-config
+  'dev-perso':
+    - my-config.dev-perso-config
