@@ -3,4 +3,11 @@
 
 base:
   'dom0':
-    - my-config
+    - my-config.anon-whonix
+    - my-config.dev-perso
+    - my-config.personal
+    - my-config.personal-pub
+    - my-config.untrusted
+    - my-config.vault
+    - my-config.work
+    - my-config.work-pub
