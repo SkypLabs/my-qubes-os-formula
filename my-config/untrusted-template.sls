@@ -4,5 +4,5 @@
 untrusted-template:
   qvm.clone:
     - name: custom-untrusted
-    - source: fedora-25
+    - source: fedora-26
     - label: black

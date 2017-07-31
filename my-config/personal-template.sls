@@ -4,5 +4,5 @@
 personal-template:
   qvm.clone:
     - name: custom-personal
-    - source: fedora-25
+    - source: fedora-26
     - label: black
