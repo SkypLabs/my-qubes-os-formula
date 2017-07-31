@@ -5,7 +5,7 @@ dev-perso:
   qvm.vm:
     - name: dev-perso
     - present:
-      - template: debian-8
+      - template: debian-9
       - label: blue
       - flags:
         - standalone

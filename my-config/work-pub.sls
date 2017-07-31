@@ -5,7 +5,7 @@ work-pub:
   qvm.vm:
     - name: work-pub
     - present:
-      - template: fedora-23
+      - template: fedora-25
       - label: yellow
     - prefs:
       - memory: 400

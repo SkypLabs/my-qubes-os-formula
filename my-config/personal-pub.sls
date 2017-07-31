@@ -5,7 +5,7 @@ personal-pub:
   qvm.vm:
     - name: personal-pub
     - present:
-      - template: fedora-23
+      - template: fedora-25
       - label: yellow
     - prefs:
       - memory: 400
