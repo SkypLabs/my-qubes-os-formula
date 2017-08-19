@@ -13,3 +13,7 @@ nodejs-packages:
     - pkgs:
       - nodejs
       - npm
+
+/usr/bin/node:
+  file.symlink:
+    - target: /usr/bin/nodejs
