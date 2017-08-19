@@ -12,10 +12,12 @@ base:
     - my-config.work
     - my-config.work-pub
   'custom-personal':
-    - my-config.personal-template-config
+    - my-config.office-tools
   'custom-work':
-    - my-config.work-template-config
+    - my-config.office-tools
   'custom-untrusted':
     - my-config.untrusted-template-config
   'dev-perso':
-    - my-config.dev-perso-config
+    - my-config.dev-tools
+    - my-config.git-config
+    - my-config.nodejs-dev

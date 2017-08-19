@@ -23,59 +23,64 @@ Runs all the states of this formula.
 ``my-config.anon-whonix``
 -------------------------
 
-Create and configure the 'anon-whonix' appVM.
+Creates and configures the 'anon-whonix' appVM.
 
 ``my-config.dev-perso``
 -----------------------
 
-Create and configure the 'dev-perso' HVM.
+Creates and configures the 'dev-perso' HVM.
 
-``my-config.dev-perso-config``
-------------------------------
+``my-config.dev-tools``
+-----------------------
 
-Customise the 'dev-perso' HVM.
+Installs common development tools.
+
+``my-config.git-config``
+-----------------------
+
+Sets up my Git configuration.
+
+``my-config.nodejs-dev``
+-----------------------
+
+Installs a NodeJS development environment.
+
+``my-config.office-tools``
+-----------------------
+
+Installs office tools.
 
 ``my-config.personal``
 ----------------------
 
-Create and configure the 'personal' appVM.
-
-``my-config.personal-template-config``
---------------------------------------
-
-Customise the 'custom-personal' template.
+Creates and configures the 'personal' appVM.
 
 ``my-config.personal-pub``
 --------------------------
 
-Create and configure the 'personal-pub' appVM.
+Creates and configures the 'personal-pub' appVM.
 
 ``my-config.untrusted``
 -----------------------
 
-Create and configure the 'untrusted' appVM.
+Creates and configures the 'untrusted' appVM.
 
 ``my-config.untrusted-template-config``
 ---------------------------------------
 
-Customise the 'custom-untrusted' template.
+Customises the 'custom-untrusted' template.
 
 ``my-config.vault``
 -------------------
 
-Create and configure the 'vault' appVM.
+Creates and configures the 'vault' appVM.
 
 ``my-config.work``
 ------------------
 
-Create and configure the 'work' appVM.
-
-``my-config.work-template-config``
-----------------------------------
-
-Customise the 'work-untrusted' template.
+Create and configures the 'work' appVM.
 
 ``my-config.work-pub``
 ----------------------
 
-Create and configure the 'work-pub' appVM.
+Creates and configures the 'work-pub' appVM.
