@@ -17,3 +17,11 @@ nodejs-packages:
 /usr/bin/node:
   file.symlink:
     - target: /usr/bin/nodejs
+
+/home/user/.gitconfig:
+  file.managed:
+    - user: user
+    - group: user
+    - mode: 0644
+    - source: https://raw.githubusercontent.com/SkypLabs/git-config/master/.gitconfig
+    - skip_verify: True
