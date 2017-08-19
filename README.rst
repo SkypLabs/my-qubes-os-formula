@@ -36,17 +36,17 @@ Creates and configures the 'dev-perso' HVM.
 Installs common development tools.
 
 ``my-config.git``
------------------------
+-----------------
 
 Installs git, the tools used by my git configuration and sets up my git configuration.
 
 ``my-config.nodejs-dev``
------------------------
+------------------------
 
 Installs a NodeJS development environment.
 
 ``my-config.office-tools``
------------------------
+--------------------------
 
 Installs office tools.
 
@@ -74,6 +74,11 @@ Customises the 'custom-untrusted' template.
 -------------------
 
 Creates and configures the 'vault' appVM.
+
+``my-config.vim``
+-----------------
+
+Installs vim and sets up my vim configuration.
 
 ``my-config.work``
 ------------------
