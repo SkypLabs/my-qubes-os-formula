@@ -19,5 +19,5 @@ base:
     - my-config.untrusted-template-config
   'dev-perso':
     - my-config.dev-tools
-    - my-config.git-config
+    - my-config.git
     - my-config.nodejs-dev

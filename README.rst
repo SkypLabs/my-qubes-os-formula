@@ -35,10 +35,10 @@ Creates and configures the 'dev-perso' HVM.
 
 Installs common development tools.
 
-``my-config.git-config``
+``my-config.git``
 -----------------------
 
-Sets up my Git configuration.
+Installs git, the tools used by my git configuration and sets up my git configuration.
 
 ``my-config.nodejs-dev``
 -----------------------
