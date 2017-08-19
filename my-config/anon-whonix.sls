@@ -8,3 +8,5 @@ anon-whonix-prefs:
   qvm.prefs:
     - name: anon-whonix
     - include-in-backups: False
+    - require:
+      - sls: qvm.anon-whonix

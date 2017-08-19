@@ -10,3 +10,6 @@ personal-prefs:
     - name: personal
     - template: custom-personal
     - label: blue
+    - require:
+      - sls: qvm.personal
+      - sls: my-config.personal-template

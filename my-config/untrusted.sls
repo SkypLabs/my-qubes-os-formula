@@ -9,3 +9,6 @@ untrusted-prefs:
   qvm.prefs:
     - name: untrusted
     - template: custom-untrusted
+    - require:
+      - sls: qvm.untrusted
+      - sls: my-config.untrusted-template

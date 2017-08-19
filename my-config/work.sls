@@ -9,3 +9,6 @@ work-prefs:
   qvm.prefs:
     - name: work
     - template: custom-work
+    - require:
+      - sls: qvm.work
+      - sls: my-config.work-template
