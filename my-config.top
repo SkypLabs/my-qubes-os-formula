@@ -21,6 +21,7 @@ base:
   'dev-perso':
     - my-config.chromium
     - my-config.dev-tools
+    - my-config.docker
     - my-config.git
     - my-config.nodejs-dev
     - my-config.python-dev

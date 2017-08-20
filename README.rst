@@ -26,9 +26,9 @@ Runs all the states of this formula.
 Creates and configures the 'anon-whonix' appVM.
 
 ``my-config.chromium``
--------------------------
+----------------------
 
-Installs chromium web browser.
+Installs Chromium web browser.
 
 ``my-config.dev-perso``
 -----------------------
@@ -40,13 +40,18 @@ Creates and configures the 'dev-perso' HVM.
 
 Installs common development tools.
 
+``my-config.docker``
+--------------------
+
+Installs Docker.
+
 ``my-config.git``
 -----------------
 
 Installs git, the tools used by my git configuration and sets up my git configuration.
 
 ``my-config.multimedia-tools``
------------------
+------------------------------
 
 Installs multimedia codecs and tools.
 
@@ -84,11 +89,6 @@ Sets up RPM Fusion repositories.
 -----------------------
 
 Creates and configures the 'untrusted' appVM.
-
-``my-config.untrusted-template-config``
----------------------------------------
-
-Customises the 'custom-untrusted' template.
 
 ``my-config.vault``
 -------------------
