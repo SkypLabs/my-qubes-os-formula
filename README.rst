@@ -60,6 +60,11 @@ Creates and configures the 'personal' appVM.
 
 Creates and configures the 'personal-pub' appVM.
 
+``my-config.python-dev``
+------------------------
+
+Installs a Python development environment.
+
 ``my-config.untrusted``
 -----------------------
 

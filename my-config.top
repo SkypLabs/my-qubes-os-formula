@@ -21,4 +21,5 @@ base:
     - my-config.dev-tools
     - my-config.git
     - my-config.nodejs-dev
+    - my-config.python-dev
     - my-config.vim
