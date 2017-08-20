@@ -1,18 +1,23 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
-git-packages:
+include:
+  - my-config.vim
+
+git:
+  pkg.installed: []
+
+git-external-tools:
   pkg.installed:
     - pkgs:
-      - git
       - meld
+    - require:
+      - pkg: vim
 
 /home/user/.gitconfig:
   file.managed:
+    - source: https://raw.githubusercontent.com/SkypLabs/git-config/master/.gitconfig
     - user: user
     - group: user
     - mode: 0644
-    - source: https://raw.githubusercontent.com/SkypLabs/git-config/master/.gitconfig
     - skip_verify: True
-    - require:
-      - pkg: git-packages
