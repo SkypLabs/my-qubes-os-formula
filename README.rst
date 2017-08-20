@@ -25,6 +25,11 @@ Runs all the states of this formula.
 
 Creates and configures the 'anon-whonix' appVM.
 
+``my-config.chromium``
+-------------------------
+
+Installs chromium web browser.
+
 ``my-config.dev-perso``
 -----------------------
 
@@ -39,6 +44,11 @@ Installs common development tools.
 -----------------
 
 Installs git, the tools used by my git configuration and sets up my git configuration.
+
+``my-config.multimedia-tools``
+-----------------
+
+Installs multimedia codecs and tools.
 
 ``my-config.nodejs-dev``
 ------------------------
@@ -64,6 +74,11 @@ Creates and configures the 'personal-pub' appVM.
 ------------------------
 
 Installs a Python development environment.
+
+``my-config.rpm-fusion``
+------------------------
+
+Sets up RPM Fusion repositories.
 
 ``my-config.untrusted``
 -----------------------

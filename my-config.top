@@ -16,8 +16,10 @@ base:
   'custom-work':
     - my-config.office-tools
   'custom-untrusted':
-    - my-config.untrusted-template-config
+    - my-config.chromium
+    - my-config.multimedia-tools
   'dev-perso':
+    - my-config.chromium
     - my-config.dev-tools
     - my-config.git
     - my-config.nodejs-dev
