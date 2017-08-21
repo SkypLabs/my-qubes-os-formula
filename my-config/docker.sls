@@ -27,3 +27,6 @@ docker-repository:
 
 docker-ce:
   pkg.installed: []
+  service.running:
+    - name: docker
+    - enable: True
