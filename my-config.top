@@ -4,8 +4,8 @@
 base:
   'dom0':
     - my-config.anon-whonix
-    - my-config.dev-perso
     - my-config.personal
+    - my-config.personal-dev
     - my-config.personal-pub
     - my-config.untrusted
     - my-config.vault
@@ -18,7 +18,7 @@ base:
   'custom-untrusted':
     - my-config.chromium
     - my-config.multimedia-tools
-  'dev-perso':
+  'personal-dev':
     - my-config.chromium
     - my-config.dev-tools
     - my-config.docker

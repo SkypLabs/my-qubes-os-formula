@@ -4,12 +4,12 @@
 include:
   - qvm.sys-firewall
 
-dev-perso:
+personal-dev:
   qvm.vm:
-    - name: dev-perso
+    - name: personal-dev
     - present:
       - template: debian-9
-      - label: blue
+      - label: grey
       - flags:
         - standalone
     - prefs:

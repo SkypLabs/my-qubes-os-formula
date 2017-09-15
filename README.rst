@@ -30,11 +30,6 @@ Creates and configures the 'anon-whonix' appVM.
 
 Installs Chromium web browser.
 
-``my-config.dev-perso``
------------------------
-
-Creates and configures the 'dev-perso' HVM.
-
 ``my-config.dev-tools``
 -----------------------
 
@@ -69,6 +64,11 @@ Installs office tools.
 ----------------------
 
 Creates and configures the 'personal' appVM.
+
+``my-config.personal-dev``
+-----------------------
+
+Creates and configures the 'personal-dev' HVM.
 
 ``my-config.personal-pub``
 --------------------------
