@@ -5,7 +5,6 @@ nodejs-packages:
   pkg.installed:
     - pkgs:
       - nodejs
-      - npm
 
 /usr/bin/node:
   file.symlink:
