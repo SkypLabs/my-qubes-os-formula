@@ -5,6 +5,7 @@ office-packages:
   pkg.installed:
     - pkgs:
       - gimp
+      - graphviz
       - libreoffice
       - pandoc
       - pandoc-pdf
