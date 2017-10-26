@@ -43,7 +43,12 @@ Installs Docker.
 ``my-config.git``
 -----------------
 
-Installs git, the tools used by my git configuration and sets up my git configuration.
+Installs git and the tools used by my git configuration.
+
+``my-config.git-config``
+-----------------
+
+Sets up my git configuration.
 
 ``my-config.multimedia-tools``
 ------------------------------
@@ -98,7 +103,12 @@ Creates and configures the 'vault' appVM.
 ``my-config.vim``
 -----------------
 
-Installs vim and sets up my vim configuration.
+Installs vim.
+
+``my-config.vim-config``
+-----------------
+
+Sets up my vim configuration.
 
 ``my-config.work``
 ------------------

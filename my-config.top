@@ -10,6 +10,7 @@ base:
     - my-config.untrusted
     - my-config.vault
     - my-config.work
+    - my-config.work-dev
     - my-config.work-pub
   'custom-personal':
     - my-config.office-tools
@@ -18,7 +19,7 @@ base:
   'custom-untrusted':
     - my-config.chromium
     - my-config.multimedia-tools
-  'personal-dev':
+  'development':
     - my-config.chromium
     - my-config.dev-tools
     - my-config.docker
@@ -26,3 +27,9 @@ base:
     - my-config.nodejs-dev
     - my-config.python-dev
     - my-config.vim
+  'personal-dev':
+    - my-config.git-config
+    - my-config.vim-config
+  'work-dev':
+    - my-config.git-config
+    - my-config.vim-config

@@ -5,9 +5,9 @@ include:
   - qvm.sys-firewall
   - my-config.development-template
 
-personal-dev:
+work-dev:
   qvm.vm:
-    - name: personal-dev
+    - name: work-dev
     - present:
       - template: development
       - label: gray
