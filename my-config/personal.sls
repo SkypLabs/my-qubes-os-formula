@@ -6,10 +6,14 @@ include:
   - my-config.personal-template
 
 personal-prefs:
-  qvm.prefs:
+  qvm.vm:
     - name: personal
-    - template: custom-personal
-    - label: blue
+    - present:
+      - template: custom-personal
+      - label: blue
+    - prefs:
+      - include-in-backups: True
+      - netvm: sys-firewall
     - require:
       - sls: qvm.personal
       - sls: my-config.personal-template

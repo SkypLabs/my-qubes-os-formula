@@ -5,8 +5,11 @@ include:
   - qvm.anon-whonix
 
 anon-whonix-prefs:
-  qvm.prefs:
+  qvm.vm:
     - name: anon-whonix
-    - include-in-backups: False
+    - present:
+      - label: red
+    - prefs:
+      - include-in-backups: False
     - require:
       - sls: qvm.anon-whonix

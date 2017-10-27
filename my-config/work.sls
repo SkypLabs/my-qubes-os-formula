@@ -6,9 +6,14 @@ include:
   - my-config.work-template
 
 work-prefs:
-  qvm.prefs:
+  qvm.vm:
     - name: work
-    - template: custom-work
+    - present:
+      - template: custom-work
+      - label: blue
+    - prefs:
+      - include-in-backups: True
+      - netvm: sys-firewall
     - require:
       - sls: qvm.work
       - sls: my-config.work-template

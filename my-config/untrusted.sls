@@ -6,9 +6,14 @@ include:
   - my-config.untrusted-template
 
 untrusted-prefs:
-  qvm.prefs:
+  qvm.vm:
     - name: untrusted
-    - template: custom-untrusted
+    - present:
+      - template: custom-untrusted
+      - label: red
+    - prefs:
+      - include-in-backups: True
+      - netvm: sys-firewall
     - require:
       - sls: qvm.untrusted
       - sls: my-config.untrusted-template
