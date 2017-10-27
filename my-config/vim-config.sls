@@ -65,8 +65,15 @@ YouCompleteMe:
     - runas: user
     - require:
       - git: YouCompleteMe
+      - cmd: increase-tmp
     - onchanges:
       - git: YouCompleteMe
+
+# YouCompleteMe installation uses more than 1G of tmp files.
+increase-tmp:
+  cmd.run:
+    - name: mount -o remount,size=2G /tmp
+    - runas: root
 
 emmet-vim:
   git.latest:
