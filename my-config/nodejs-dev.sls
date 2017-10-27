@@ -5,9 +5,10 @@ nodejs-packages:
   pkg.installed:
     - pkgs:
       - nodejs
-
-/usr/bin/node:
-  file.symlink:
-    - target: /usr/bin/nodejs
     - require:
-      - pkg: nodejs-packages
+      - cmd: node-ppa
+
+node-ppa:
+  cmd.run:
+    - name: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    - runas: user
