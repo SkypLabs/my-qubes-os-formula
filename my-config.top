@@ -13,6 +13,7 @@ base:
     - my-config.work-dev
     - my-config.work-pub
   'custom-personal':
+    - my-config.chromium
     - my-config.office-tools
   'custom-work':
     - my-config.office-tools
