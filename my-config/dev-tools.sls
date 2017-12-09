@@ -6,3 +6,4 @@ common-dev-packages:
     - pkgs:
       - build-essential
       - cmake
+      - screen
