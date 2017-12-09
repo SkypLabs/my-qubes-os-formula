@@ -30,3 +30,11 @@ docker-ce:
   service.running:
     - name: docker
     - enable: True
+
+/usr/bin/docker-compose:
+  file.managed:
+    - source: https://github.com/docker/compose/releases/download/1.17.1/docker-compose-Linux-x86_64
+    - user: root
+    - group: root
+    - mode: 0755
+    - skip_verify: True
