@@ -38,3 +38,10 @@ docker-ce:
     - group: root
     - mode: 0755
     - skip_verify: True
+
+/lib/systemd/system/docker.service:
+  file.replace:
+    - pattern: '(^ExecStart=.*?)( -g /home/user/docker|$)'
+    - repl: '\1 -g /home/user/docker'
+    - require_in:
+      - pkgrepo: docker-repository
