@@ -2,7 +2,7 @@
 my-qubes-os-formula
 ===================
 
-A `SaltStack <https://saltstack.com/>`_ formula to set up my personal configuration for Qubes OS.
+A `SaltStack <https://saltstack.com/>`_ formula to set up my personal Qubes OS configuration. See the `documentation <https://github.com/SkypLabs/my-qubes-os-formula/wiki>`_ for further information.
 
 .. note::
 
@@ -109,13 +109,3 @@ Installs vim.
 -----------------
 
 Sets up my vim configuration.
-
-``my-config.work``
-------------------
-
-Create and configures the 'work' appVM.
-
-``my-config.work-pub``
-----------------------
-
-Creates and configures the 'work-pub' appVM.
