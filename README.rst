@@ -4,10 +4,10 @@ my-qubes-os-formula
 
 A `SaltStack <https://saltstack.com/>`_ formula to set up my personal Qubes OS configuration. See the `documentation <https://github.com/SkypLabs/my-qubes-os-formula/wiki>`_ for further information.
 
-.. note::
+**NOTE**
 
-    See the full `Salt Formulas installation and usage instructions
-    <http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
+See the full `Salt Formulas installation and usage instructions
+<http://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html>`_.
 
 Available states
 ================
