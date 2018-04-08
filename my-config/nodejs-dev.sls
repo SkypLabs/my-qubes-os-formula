@@ -4,6 +4,7 @@
 nodejs-packages:
   pkg.installed:
     - pkgs:
+      - grunt
       - nodejs
     - require:
       - cmd: node-ppa
