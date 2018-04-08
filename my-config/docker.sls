@@ -44,4 +44,4 @@ docker-ce:
     - pattern: '(^ExecStart=.*?)( -g /home/user/docker|$)'
     - repl: '\1 -g /home/user/docker'
     - require_in:
-      - pkgrepo: docker-repository
+      - service: docker-ce
