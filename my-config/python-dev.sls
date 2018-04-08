@@ -6,6 +6,7 @@ python2-packages:
     - pkgs:
       - python-dev
       - python-pip
+      - python-sphinx
       - python-virtualenv
 
 python3-packages:
@@ -13,4 +14,5 @@ python3-packages:
     - pkgs:
       - python3-dev
       - python3-pip
+      - python3-sphinx
       - python3-virtualenv
