@@ -4,6 +4,11 @@
 common-dev-packages:
   pkg.installed:
     - pkgs:
+      {%- if grains['os_family']|lower == 'debian' %}
       - build-essential
+      {% endif %}
       - cmake
+      - gdb
       - screen
+      - strace
+      - tcpdump
