@@ -12,9 +12,11 @@ base:
   'custom-personal':
     - my-config.chromium
     - my-config.office-tools
+    - my-config.security-tools
   'custom-untrusted':
     - my-config.chromium
     - my-config.multimedia-tools
+    - my-config.security-tools
   'development':
     - my-config.chromium
     - my-config.dev-tools
