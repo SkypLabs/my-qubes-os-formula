@@ -4,8 +4,14 @@
 common-dev-packages:
   pkg.installed:
     - pkgs:
-      {%- if grains['os_family']|lower == 'debian' %}
+      {% if grains['os_family']|lower == 'debian' %}
       - build-essential
+      {% elif grains['os_family']|lower == 'redhat' %}
+      - automake
+      - gcc
+      - gcc-c++
+      - kernel-devel
+      - make
       {% endif %}
       - cmake
       - gdb
