@@ -23,6 +23,7 @@ base:
     - my-config.docker
     - my-config.git
     - my-config.golang-dev
+    - my-config.latex-dev
     - my-config.nodejs-dev
     - my-config.python-dev
     - my-config.security-tools
