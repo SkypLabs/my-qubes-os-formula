@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# vim: set syntax=jinja ts=2 sw=2 sts=2 et :
+
+{% import_yaml 'my-config/defaults.yaml' as default_settings %}
+
+{% set user = salt['pillar.get'](
+    'default_user',
+    default=default_settings.default_user,
+    merge=True
+  )
+%}

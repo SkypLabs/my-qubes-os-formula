@@ -1,0 +1,7 @@
+# This file contains all the default values used by
+# the 'my-config' formula.
+
+# Default user configuration.
+default_user:
+  username: user
+  group: user

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
+{% from 'my-config/map.jinja' import user with context %}
+
 {% set vim_dirs = [
   'autoload',
   'bundle',
@@ -8,10 +10,10 @@
 ] %}
 
 {% for dir in vim_dirs %}
-/home/user/.vim/{{ dir }}:
+/home/{{ user.username }}/.vim/{{ dir }}:
   file.directory:
-    - user: user
-    - group: user
+    - user: {{ user.username }}
+    - group: {{ user.group }}
     - mode: 0755
     - makedirs: True
     - order: 1
@@ -30,39 +32,39 @@
 ] %}
 
 {% for file in vim_files %}
-/home/user/{{ file }}:
+/home/{{ user.username }}/{{ file }}:
   file.managed:
     - source: https://raw.githubusercontent.com/SkypLabs/vim-config/master/{{ file }}
-    - user: user
-    - group: user
+    - user: {{ user.username }}
+    - group: {{ user.group }}
     - mode: 0644
     - skip_verify: True
 {% endfor %}
 
-/home/user/.vim/autoload/pathogen.vim:
+/home/{{ user.username }}/.vim/autoload/pathogen.vim:
   file.managed:
     - source: https://tpo.pe/pathogen.vim
-    - user: user
-    - group: user
+    - user: {{ user.username }}
+    - group: {{ user.group }}
     - mode: 0644
     - skip_verify: True
 
 vim-colors-solarized:
   git.latest:
     - name: https://github.com/altercation/vim-colors-solarized.git
-    - target: /home/user/.vim/bundle/vim-colors-solarized
-    - user: user
+    - target: /home/{{ user.username }}/.vim/bundle/vim-colors-solarized
+    - user: {{ user.username }}
 
 YouCompleteMe:
   git.latest:
     - name: https://github.com/Valloric/YouCompleteMe.git
-    - target: /home/user/.vim/bundle/YouCompleteMe
+    - target: /home/{{ user.username }}/.vim/bundle/YouCompleteMe
     - submodules: True
-    - user: user
+    - user: {{ user.username }}
   cmd.run:
     - name: ./install.py --clang-completer --tern-completer
-    - cwd: /home/user/.vim/bundle/YouCompleteMe
-    - runas: user
+    - cwd: /home/{{ user.username }}/.vim/bundle/YouCompleteMe
+    - runas: {{ user.username }}
     - require:
       - git: YouCompleteMe
       - cmd: increase-tmp
@@ -78,17 +80,17 @@ increase-tmp:
 emmet-vim:
   git.latest:
     - name: https://github.com/mattn/emmet-vim.git
-    - target: /home/user/.vim/bundle/emmet-vim
-    - user: user
+    - target: /home/{{ user.username }}/.vim/bundle/emmet-vim
+    - user: {{ user.username }}
 
 salt-vim:
   git.latest:
     - name: https://github.com/saltstack/salt-vim.git
-    - target: /home/user/.vim/bundle/salt-vim
-    - user: user
+    - target: /home/{{ user.username }}/.vim/bundle/salt-vim
+    - user: {{ user.username }}
 
 typescript-vim:
   git.latest:
     - name: https://github.com/leafgarland/typescript-vim.git
-    - target: /home/user/.vim/bundle/typescript-vim
-    - user: user
+    - target: /home/{{ user.username }}/.vim/bundle/typescript-vim
+    - user: {{ user.username }}
