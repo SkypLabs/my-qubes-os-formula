@@ -6,16 +6,13 @@ base:
     - my-config.anon-whonix
     - my-config.personal
     - my-config.personal-dev
+    - my-config.personal-multimedia
     - my-config.personal-pub
     - my-config.untrusted
     - my-config.vault
   'custom-personal':
     - my-config.chromium
     - my-config.office-tools
-    - my-config.security-tools
-  'custom-untrusted':
-    - my-config.chromium
-    - my-config.multimedia-tools
     - my-config.security-tools
   'development':
     - my-config.chromium
@@ -28,6 +25,10 @@ base:
     - my-config.python-dev
     - my-config.security-tools
     - my-config.vim
+  'multimedia':
+    - my-config.chromium
+    - my-config.multimedia-tools
+    - my-config.security-tools
   'personal-dev':
     - my-config.git-config
     - my-config.vim-config

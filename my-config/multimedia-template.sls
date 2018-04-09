@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
-untrusted-template:
+multimedia-template:
   qvm.clone:
-    - name: custom-untrusted
+    - name: multimedia
     - source: fedora-26
     - label: black

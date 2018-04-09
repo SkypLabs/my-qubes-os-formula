@@ -2,18 +2,18 @@
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 include:
-  - qvm.untrusted
+  - qvm.sys-firewall
   - my-config.multimedia-template
 
-untrusted-prefs:
+personal-multimedia:
   qvm.vm:
-    - name: untrusted
+    - name: personal-multimedia
     - present:
       - template: multimedia
-      - label: red
+      - label: yellow
     - prefs:
       - include-in-backups: True
       - netvm: sys-firewall
     - require:
-      - sls: qvm.untrusted
+      - qvm: sys-firewall
       - sls: my-config.multimedia-template
