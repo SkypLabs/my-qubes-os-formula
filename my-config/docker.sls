@@ -31,9 +31,11 @@ docker-ce:
     - name: docker
     - enable: True
 
+{% set docker_compose_version = '1.20.1' %}
+
 /usr/bin/docker-compose:
   file.managed:
-    - source: https://github.com/docker/compose/releases/download/1.17.1/docker-compose-Linux-x86_64
+    - source: https://github.com/docker/compose/releases/download/{{ docker_compose_version }}/docker-compose-Linux-x86_64
     - user: root
     - group: root
     - mode: 0755
