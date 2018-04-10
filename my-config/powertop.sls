@@ -6,5 +6,6 @@ dom0:
     - name: powertop
     - fromrepo: fedora
 powertop:
-  service.dead:
-    - enable: True
+  pkg.installed:
+    - fromrepo: fedora
+  service.enabled: []
