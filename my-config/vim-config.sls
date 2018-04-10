@@ -23,6 +23,7 @@
   '.vimrc',
   '.tern-project',
   '.vim/after/ftplugin/css.vim',
+  '.vim/after/ftplugin/go.vim',
   '.vim/after/ftplugin/html.vim',
   '.vim/after/ftplugin/javascript.vim',
   '.vim/after/ftplugin/json.vim',
@@ -48,12 +49,6 @@
     - group: {{ user.group }}
     - mode: 0644
     - skip_verify: True
-
-vim-colors-solarized:
-  git.latest:
-    - name: https://github.com/altercation/vim-colors-solarized.git
-    - target: /home/{{ user.username }}/.vim/bundle/vim-colors-solarized
-    - user: {{ user.username }}
 
 YouCompleteMe:
   git.latest:
