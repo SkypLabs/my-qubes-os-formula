@@ -9,7 +9,7 @@ base:
     - my-config.personal-pub
     - my-config.untrusted
     - my-config.vault
-    - my-config.dom0-powertop 
+    - my-config.powertop 
   'custom-personal':
     - my-config.chromium
     - my-config.office-tools
