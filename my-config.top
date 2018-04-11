@@ -8,6 +8,7 @@ base:
     - my-config.personal-dev
     - my-config.personal-multimedia
     - my-config.personal-pub
+    - my-config.powertop
     - my-config.untrusted
     - my-config.vault
   'custom-personal':
