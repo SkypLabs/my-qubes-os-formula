@@ -13,6 +13,7 @@ base:
     - my-config.vault
   'custom-personal':
     - my-config.chromium
+    - my-config.keybase
     - my-config.office-tools
     - my-config.security-tools
     - my-config.yubikey
