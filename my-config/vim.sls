@@ -7,5 +7,9 @@ vim:
 vim-plugin-dependencies:
   pkg.installed:
     - pkgs:
+      {% if grains['os_family']|lower == 'debian' %}
       - exuberant-ctags
+      {% elif grains['os_family']|lower == 'redhat' %}
+      - ctags
+      {% endif %}
       - screen
