@@ -3,3 +3,9 @@
 
 vim:
   pkg.installed: []
+
+vim-plugin-dependencies:
+  pkg.installed:
+    - pkgs:
+      - exuberant-ctags
+      - screen

@@ -55,22 +55,26 @@ YouCompleteMe:
     - name: https://github.com/Valloric/YouCompleteMe.git
     - target: /home/{{ user.username }}/.vim/bundle/YouCompleteMe
     - submodules: True
+    - force_reset: True
     - user: {{ user.username }}
   cmd.run:
-    - name: ./install.py --clang-completer --tern-completer
+    - name: ./install.py --clang-completer --go-completer --java-completer --js-completer
     - cwd: /home/{{ user.username }}/.vim/bundle/YouCompleteMe
     - runas: {{ user.username }}
-    - require:
-      - git: YouCompleteMe
-      - cmd: increase-tmp
     - onchanges:
       - git: YouCompleteMe
 
-# YouCompleteMe installation uses more than 1G of tmp files.
-increase-tmp:
-  cmd.run:
-    - name: mount -o remount,size=2G /tmp
-    - runas: root
+tagbar:
+  git.latest:
+    - name: https://github.com/majutsushi/tagbar.git
+    - target: /home/{{ user.username }}/.vim/bundle/tagbar
+    - user: {{ user.username }}
+
+screen-vim:
+  git.latest:
+    - name: https://github.com/ervandew/screen.git
+    - target: /home/{{ user.username }}/.vim/bundle/screen
+    - user: {{ user.username }}
 
 emmet-vim:
   git.latest:
