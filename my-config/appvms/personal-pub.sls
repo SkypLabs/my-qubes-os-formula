@@ -8,7 +8,7 @@ personal-pub:
   qvm.vm:
     - name: personal-pub
     - present:
-      - template: fedora-26
+      - template: fedora-29
       - label: yellow
     - prefs:
       - include-in-backups: True

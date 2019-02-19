@@ -4,5 +4,5 @@
 multimedia-template:
   qvm.clone:
     - name: multimedia
-    - source: fedora-26
+    - source: fedora-29
     - label: black
