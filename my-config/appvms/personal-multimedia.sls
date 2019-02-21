@@ -3,7 +3,7 @@
 
 include:
   - qvm.sys-firewall
-  - my-config.multimedia-template
+  - my-config.templates.multimedia-template
 
 personal-multimedia:
   qvm.vm:
@@ -16,4 +16,4 @@ personal-multimedia:
       - netvm: sys-firewall
     - require:
       - qvm: sys-firewall
-      - sls: my-config.multimedia-template
+      - sls: my-config.templates.multimedia-template

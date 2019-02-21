@@ -3,7 +3,7 @@
 
 include:
   - qvm.sys-firewall
-  - my-config.development-template
+  - my-config.templates.development-template
 
 personal-dev:
   qvm.vm:
@@ -16,4 +16,4 @@ personal-dev:
       - netvm: sys-firewall
     - require:
       - qvm: sys-firewall
-      - sls: my-config.development-template
+      - sls: my-config.templates.development-template

@@ -3,7 +3,7 @@
 
 include:
   - qvm.personal
-  - my-config.personal-template
+  - my-config.templates.personal-template
 
 personal-prefs:
   qvm.vm:
@@ -16,4 +16,4 @@ personal-prefs:
       - netvm: sys-firewall
     - require:
       - sls: qvm.personal
-      - sls: my-config.personal-template
+      - sls: my-config.templates.personal-template

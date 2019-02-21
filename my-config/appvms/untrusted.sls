@@ -3,7 +3,7 @@
 
 include:
   - qvm.untrusted
-  - my-config.multimedia-template
+  - my-config.templates.multimedia-template
 
 untrusted-prefs:
   qvm.vm:
@@ -16,4 +16,4 @@ untrusted-prefs:
       - netvm: sys-firewall
     - require:
       - sls: qvm.untrusted
-      - sls: my-config.multimedia-template
+      - sls: my-config.templates.multimedia-template
