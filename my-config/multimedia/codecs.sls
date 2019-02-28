@@ -17,6 +17,3 @@ multimedia-codecs:
       - ffmpeg
     - require:
       - sls: my-config.rpm-fusion
-
-vlc:
-  pkg.installed: []

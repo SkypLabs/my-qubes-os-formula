@@ -1,20 +1,11 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
-common-dev-packages:
+lang-french:
   pkg.installed:
     - pkgs:
       {% if grains['os_family']|lower == 'debian' %}
-      - build-essential
+      - texlive-lang-french
       {% elif grains['os_family']|lower == 'redhat' %}
-      - automake
-      - gcc
-      - gcc-c++
-      - kernel-devel
-      - make
+      - texlive-e-french
       {% endif %}
-      - cmake
-      - gdb
-      - screen
-      - strace
-      - tcpdump

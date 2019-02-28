@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
-vim:
-  pkg.installed: []
-
-vim-plugin-dependencies:
+build-essential:
   pkg.installed:
     - pkgs:
       {% if grains['os_family']|lower == 'debian' %}
-      - exuberant-ctags
+      - build-essential
       {% elif grains['os_family']|lower == 'redhat' %}
-      - ctags
+      - automake
+      - gcc
+      - gcc-c++
+      - kernel-devel
+      - make
       {% endif %}
-      - screen
