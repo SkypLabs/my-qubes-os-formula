@@ -3,34 +3,25 @@
 
 base:
   'dom0':
-    - my-config.anon-whonix
-    - my-config.personal
-    - my-config.personal-dev
-    - my-config.personal-pub
+    - my-config.appvms
     - my-config.powertop
-    - my-config.untrusted
-    - my-config.vault
   'custom-personal':
-    - my-config.chromium
+    - my-config.git
     - my-config.keybase
-    - my-config.office-tools
-    - my-config.security-tools
+    - my-config.latex.texmaker
+    - my-config.latex.lang-french
+    - my-config.office.gimp
+    - my-config.office.libreoffice
+    - my-config.office.xournal
+    - my-config.security
     - my-config.yubikey
   'development':
-    - my-config.chromium
-    - my-config.dev-tools
     - my-config.docker
     - my-config.git
-    - my-config.golang-dev
-    - my-config.latex-dev
-    - my-config.nodejs-dev
-    - my-config.python-dev
-    - my-config.security-tools
+    - my-config.golang
+    - my-config.python.dev
+    - my-config.python.pip
+    - my-config.python.sphinx
+    - my-config.python.virtualenv
+    - my-config.security
     - my-config.vim
-  'multimedia':
-    - my-config.chromium
-    - my-config.multimedia-tools
-    - my-config.security-tools
-  'personal-dev':
-    - my-config.git-config
-    - my-config.vim-config
