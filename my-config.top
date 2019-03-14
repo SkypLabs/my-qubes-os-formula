@@ -6,7 +6,6 @@ base:
     - my-config.anon-whonix
     - my-config.personal
     - my-config.personal-dev
-    - my-config.personal-multimedia
     - my-config.personal-pub
     - my-config.powertop
     - my-config.untrusted
