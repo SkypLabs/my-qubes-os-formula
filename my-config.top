@@ -19,6 +19,7 @@ base:
     - my-config.docker
     - my-config.git
     - my-config.golang
+    - my-config.node-js
     - my-config.python.dev
     - my-config.python.pip
     - my-config.python.sphinx
