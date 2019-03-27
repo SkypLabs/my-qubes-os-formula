@@ -5,5 +5,9 @@ git-external-tools:
   pkg.installed:
     - pkgs:
       - git-crypt
+      {% if grains['os_family']|lower == 'debian' %}
       - git-flow
+      {% elif grains['os_family']|lower == 'redhat' %}
+      - gitflow
+      {% endif %}
       - meld
