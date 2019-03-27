@@ -10,6 +10,7 @@ base:
     - my-config.keybase
     - my-config.latex.texmaker
     - my-config.latex.lang-french
+    - my-config.nitrokey
     - my-config.office.gimp
     - my-config.office.libreoffice
     - my-config.office.xournal
