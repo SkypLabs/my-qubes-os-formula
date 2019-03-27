@@ -26,3 +26,7 @@ base:
     - my-config.python.virtualenv
     - my-config.security
     - my-config.vim
+  'multimedia':
+    - my-config.multimedia.codecs
+    - my-config.multimedia.vlc
+    - my-config.security
