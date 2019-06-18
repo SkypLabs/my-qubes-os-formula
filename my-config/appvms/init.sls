@@ -5,6 +5,7 @@ include:
   - my-config.appvms.anon-whonix
   - my-config.appvms.personal
   - my-config.appvms.personal-dev
+  - my-config.appvms.personal-dvm
   - my-config.appvms.personal-pub
   - my-config.appvms.untrusted
   - my-config.appvms.vault
