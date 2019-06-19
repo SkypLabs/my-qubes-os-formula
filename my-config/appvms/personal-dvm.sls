@@ -14,12 +14,10 @@ personal-dvm-prefs:
     - prefs:
       - include-in-backups: False
       - netvm: sys-firewall
+      - template_for_dispvms: True
     - features:
       - enable:
         - appmenus-dispvm
-    - tags:
-      - add:
-        - template_for_dispvms
     - require:
       - sls: qvm.personal
       - sls: my-config.templates.personal-template
