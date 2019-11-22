@@ -5,6 +5,7 @@ base:
   'dom0':
     - my-config.appvms
     - my-config.powertop
+    - my-config.purism-pipe-symbol-fix
   'custom-personal':
     - my-config.git
     - my-config.keybase
