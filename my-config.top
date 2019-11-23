@@ -23,6 +23,7 @@ base:
     - my-config.yubikey
   'personal-dev':
     - my-config.docker
+    - my-config.dotfiles
     - my-config.git
     - my-config.golang
     - my-config.node-js
