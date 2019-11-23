@@ -4,6 +4,7 @@
 base:
   'dom0':
     - my-config.appvms
+    - my-config.dispvms
     - my-config.powertop
     - my-config.purism-pipe-symbol-fix
   'custom-personal':
