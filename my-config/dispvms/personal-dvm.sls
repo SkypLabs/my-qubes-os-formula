@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
+{% from 'my-config/map.jinja' import netvm with context %}
+
 include:
-  - qvm.sys-firewall
+  - qvm.{{ netvm }}
   - my-config.templates.personal-template
 
 personal-dvm-prefs:
@@ -13,11 +15,11 @@ personal-dvm-prefs:
       - label: red
     - prefs:
       - include-in-backups: False
-      - netvm: sys-firewall
+      - netvm: {{ netvm }}
       - template_for_dispvms: True
     - features:
       - enable:
         - appmenus-dispvm
     - require:
-      - qvm: sys-firewall
+      - qvm: {{ netvm }}
       - sls: my-config.templates.personal-template

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
+{% from 'my-config/map.jinja' import netvm with context %}
+
 include:
   - qvm.sys-firewall
 
@@ -14,6 +16,6 @@ personal-dev:
         - standalone
     - prefs:
       - include-in-backups: True
-      - netvm: sys-firewall
+      - netvm: {{ netvm }}
     - require:
       - qvm: sys-firewall
