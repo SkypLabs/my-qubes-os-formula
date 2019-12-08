@@ -3,17 +3,17 @@
 
 include:
   - qvm.sys-firewall
-  - my-config.templates.development-template
 
 personal-dev:
   qvm.vm:
     - name: personal-dev
     - present:
-      - template: development
+      - template: debian-9
       - label: gray
+      - flags:
+        - standalone
     - prefs:
       - include-in-backups: True
       - netvm: sys-firewall
     - require:
       - qvm: sys-firewall
-      - sls: my-config.templates.development-template

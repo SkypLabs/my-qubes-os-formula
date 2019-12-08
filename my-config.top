@@ -18,7 +18,7 @@ base:
     - my-config.office.xournal
     - my-config.security
     - my-config.yubikey
-  'development':
+  'personal-dev':
     - my-config.docker
     - my-config.git
     - my-config.golang
