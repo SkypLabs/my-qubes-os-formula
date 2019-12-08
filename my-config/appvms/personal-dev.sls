@@ -4,7 +4,7 @@
 {% from 'my-config/map.jinja' import netvm with context %}
 
 include:
-  - qvm.sys-firewall
+  - qvm.{{ netvm.name }}
 
 personal-dev:
   qvm.vm:
@@ -16,6 +16,6 @@ personal-dev:
         - standalone
     - prefs:
       - include-in-backups: True
-      - netvm: {{ netvm }}
+      - netvm: {{ netvm.name }}
     - require:
-      - qvm: sys-firewall
+      - qvm: {{ netvm.name }}

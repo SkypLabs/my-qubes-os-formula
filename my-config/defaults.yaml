@@ -7,7 +7,9 @@ default_user:
   group: user
 
 # Default template for AppVMs.
-default_template: fedora-29
+default_template:
+  name: fedora-29
 
 # Default NetVM for AppVMs.
-default_netvm: sys-whonix
+default_netvm:
+  name: sys-whonix

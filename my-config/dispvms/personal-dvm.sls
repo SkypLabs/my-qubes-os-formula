@@ -4,8 +4,8 @@
 {% from 'my-config/map.jinja' import netvm with context %}
 
 include:
-  - qvm.{{ netvm }}
   - my-config.templates.personal-template
+  - qvm.{{ netvm.name }}
 
 personal-dvm-prefs:
   qvm.vm:
@@ -15,11 +15,11 @@ personal-dvm-prefs:
       - label: red
     - prefs:
       - include-in-backups: False
-      - netvm: {{ netvm }}
+      - netvm: {{ netvm.name }}
       - template_for_dispvms: True
     - features:
       - enable:
         - appmenus-dispvm
     - require:
-      - qvm: {{ netvm }}
       - sls: my-config.templates.personal-template
+      - qvm: {{ netvm.name }}
