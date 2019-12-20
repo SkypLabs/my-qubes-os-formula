@@ -4,6 +4,7 @@
 {% from 'my-config/map.jinja' import netvm with context %}
 
 include:
+  - my-config.templates.multimedia-template
   - qvm.{{ netvm.name }}
 
 personal-pub:
@@ -16,4 +17,5 @@ personal-pub:
       - include-in-backups: True
       - netvm: {{ netvm.name }}
     - require:
+      - sls: my-config.templates.multimedia-template
       - qvm: {{ netvm.name }}
