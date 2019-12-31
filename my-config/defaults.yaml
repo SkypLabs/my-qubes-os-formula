@@ -5,3 +5,12 @@
 default_user:
   username: user
   group: user
+
+# Default templates for AppVMs.
+default_templates:
+  debian: debian-9
+  fedora: fedora-29
+
+# Default NetVM for AppVMs.
+default_netvm:
+  name: sys-whonix

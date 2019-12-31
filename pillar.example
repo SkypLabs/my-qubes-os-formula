@@ -1,7 +1,13 @@
-# This file contains all the default values used by
-# the 'my-config' formula.
-
-# Default user configuration.
-default_user:
+# User configuration.
+user:
   username: user
   group: user
+
+# Default templates for AppVMs.
+templates:
+  debian: debian-9
+  fedora: fedora-29
+
+# Default NetVM for AppVMs.
+netvm:
+  name: sys-whonix

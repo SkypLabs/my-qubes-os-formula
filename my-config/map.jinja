@@ -3,8 +3,22 @@
 
 {% import_yaml 'my-config/defaults.yaml' as default_settings %}
 
+{% set templates = salt['pillar.get'](
+    'templates',
+    default=default_settings.default_templates,
+    merge=True
+  )
+%}
+
+{% set netvm = salt['pillar.get'](
+    'netvm',
+    default=default_settings.default_netvm,
+    merge=True
+  )
+%}
+
 {% set user = salt['pillar.get'](
-    'default_user',
+    'user',
     default=default_settings.default_user,
     merge=True
   )
