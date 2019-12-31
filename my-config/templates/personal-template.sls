@@ -6,5 +6,5 @@
 personal-template:
   qvm.clone:
     - name: custom-personal
-    - source: {{ template }}
+    - source: {{ template.name }}
     - label: black

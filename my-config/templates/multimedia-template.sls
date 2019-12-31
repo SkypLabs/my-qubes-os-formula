@@ -6,5 +6,5 @@
 multimedia-template:
   qvm.clone:
     - name: multimedia
-    - source: {{ template }}
+    - source: {{ template.name }}
     - label: black
