@@ -3,10 +3,11 @@ user:
   username: user
   group: user
 
-# Template for AppVMs.
-template:
-  name: fedora-29
+# Default templates for AppVMs.
+templates:
+  debian: debian-9
+  fedora: fedora-29
 
-# NetVM for AppVMs.
+# Default NetVM for AppVMs.
 netvm:
   name: sys-whonix

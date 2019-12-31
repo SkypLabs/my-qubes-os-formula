@@ -6,9 +6,10 @@ default_user:
   username: user
   group: user
 
-# Default template for AppVMs.
-default_template:
-  name: fedora-29
+# Default templates for AppVMs.
+default_templates:
+  debian: debian-9
+  fedora: fedora-29
 
 # Default NetVM for AppVMs.
 default_netvm:

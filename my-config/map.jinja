@@ -3,9 +3,9 @@
 
 {% import_yaml 'my-config/defaults.yaml' as default_settings %}
 
-{% set template = salt['pillar.get'](
-    'template',
-    default=default_settings.default_template,
+{% set templates = salt['pillar.get'](
+    'templates',
+    default=default_settings.default_templates,
     merge=True
   )
 %}
