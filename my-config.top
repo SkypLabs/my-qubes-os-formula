@@ -2,7 +2,8 @@
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 base:
-  'dom0':
+  qubes:type:admin:
+    - match: pillar
     - my-config.appvms
     - my-config.dispvms
     - my-config.powertop
