@@ -2,11 +2,15 @@
 # vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 base:
-  'dom0':
+  qubes:type:admin:
+    - match: pillar
     - my-config.appvms
     - my-config.dispvms
     - my-config.powertop
     - my-config.purism-pipe-symbol-fix
+  qubes:type:template:
+    - match: pillar
+    - my-config.security
   'custom-personal':
     - my-config.git
     - my-config.keybase
@@ -16,7 +20,6 @@ base:
     - my-config.office.gimp
     - my-config.office.libreoffice
     - my-config.office.xournal
-    - my-config.security
     - my-config.yubikey
   'personal-dev':
     - my-config.docker
@@ -27,9 +30,7 @@ base:
     - my-config.python.pip
     - my-config.python.sphinx
     - my-config.python.virtualenv
-    - my-config.security
     - my-config.vim
   'multimedia':
     - my-config.multimedia.codecs
     - my-config.multimedia.vlc
-    - my-config.security
