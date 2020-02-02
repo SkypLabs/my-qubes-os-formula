@@ -4,3 +4,4 @@
 include:
   - my-config.dotfiles.rcm
   - my-config.dotfiles.repository
+  - my-config.dotfiles.tmux
