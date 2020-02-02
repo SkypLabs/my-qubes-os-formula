@@ -3,3 +3,4 @@
 
 include:
   - my-config.dotfiles.rcm
+  - my-config.dotfiles.repository
